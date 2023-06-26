@@ -5,7 +5,7 @@ using Questao5.Application.Commands.MovimentacaoContaCorrente;
 using Questao5.Application.Handlers;
 using Questao5.Application.Queries.Requests;
 using Questao5.Domain.Entities;
-using Questao5.Infrastructure.Repository;
+using Questao5.Infrastructure.Database.Repository;
 using Questao5.Infrastructure.Sqlite;
 using System.Reflection;
 

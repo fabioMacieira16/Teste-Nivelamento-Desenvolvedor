@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Questao5.Domain.Entities;
 
-namespace Questao5.Infrastructure.Contexts;
+namespace Questao5.Infrastructure.Database.Contexts;
 
 public class AppDbContext : DbContext
 {
@@ -11,11 +11,10 @@ public class AppDbContext : DbContext
     { }
 
     public DbSet<ContaCorrente> ContasCorrentes { get; set; }
-    public DbSet<MovimentoContaCorrente> MovimentacoesContaCorrente { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ContaCorrente>();
-           
+
     }
 }
