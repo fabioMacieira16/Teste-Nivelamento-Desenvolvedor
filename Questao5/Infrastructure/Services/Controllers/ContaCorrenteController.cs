@@ -31,7 +31,7 @@ public class ContaCorrenteController : ApiController
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
     [HttpPost]
-    public async Task<IActionResult> MovimentarContaCorrente([FromBody] MovimentacaoContaCorrenteCommand movimentacaoContaCorrenteCommand)
+    public async Task<IActionResult> MovimentacaoContaCorrente([FromBody] MovimentacaoContaCorrenteCommand movimentacaoContaCorrenteCommand)
         => await ExecControllerAsync(() => _mediator.Send(movimentacaoContaCorrenteCommand));
 
 
