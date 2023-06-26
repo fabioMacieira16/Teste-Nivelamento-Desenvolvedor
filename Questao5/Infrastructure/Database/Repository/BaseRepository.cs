@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Questao5.Domain.Repository;
+using Questao5.Infrastructure.Database.Contexts;
 
 namespace Questao5.Infrastructure.Database.Repository
 {
@@ -10,9 +12,9 @@ namespace Questao5.Infrastructure.Database.Repository
 
         readonly DbSet<TEntity> DbSet;
 
-        readonly AplicationContext _aplicationContext;
+        readonly AppDbContext _aplicationContext;
         public BaseRepository(IUnitOfWork unitOfWork,
-                                AplicationContext aplicationContext,
+                                AppDbContext aplicationContext,
                                 IBaseConsultRepository<TEntity> repositoryConsult
 
                                 )

@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using Questao5.Domain.Entities;
+using Questao5.Infrastructure.Database.Mapping;
 
 namespace Questao5.Infrastructure.Database.Contexts;
 
@@ -10,11 +10,11 @@ public class AppDbContext : DbContext
         : base(options)
     { }
 
-    public DbSet<ContaCorrente> ContasCorrentes { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<ContaCorrente>();
-
+        modelBuilder.ApplyConfiguration(new ContaCorrenteMapping());
+        modelBuilder.ApplyConfiguration(new MovimentoMapping());
+        modelBuilder.ApplyConfiguration(new IdEmpotenciaMapping());
     }
 }

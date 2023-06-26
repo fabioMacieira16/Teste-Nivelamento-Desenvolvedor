@@ -1,15 +1,25 @@
-using FluentAssertions.Common;
 using MediatR;
-using Microsoft.Extensions.DependencyInjection;
-using Questao5.Application.Commands.MovimentacaoContaCorrente;
-using Questao5.Application.Handlers;
-using Questao5.Application.Queries.Requests;
-using Questao5.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Questao5.Application.AutoMapper;
+using Questao5.Domain.Language;
+using Questao5.Domain.Repository;
+using Questao5.Infrastructure.CrossCutting;
+using Questao5.Infrastructure.Database.Contexts;
 using Questao5.Infrastructure.Database.Repository;
+using Questao5.Infrastructure.Database.Uow;
 using Questao5.Infrastructure.Sqlite;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// permite acessar e definir a configuração
+ConfigurationManager configuration = builder.Configuration;
+IWebHostEnvironment environment = builder.Environment;
+
+builder.Configuration.AddJsonFile("appsettings.json", true, true)
+                    .SetBasePath(environment.ContentRootPath)
+                    .AddJsonFile($"appsettings.{environment.EnvironmentName}.json", true, true)
+                    .AddEnvironmentVariables();
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -20,18 +30,32 @@ builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddSingleton(new DatabaseConfig { Name = builder.Configuration.GetValue<string>("DatabaseName", "Data Source=database.sqlite") });
 builder.Services.AddSingleton<IDatabaseBootstrap, DatabaseBootstrap>();
 
-//builder.Services.AddScoped<IRequestHandler<MovimentacaoContaCorrenteCommand, Unit>, MovimentacaoContaCorrenteCommandHandler>();
-builder.Services.AddScoped<IRequestHandler<ConsultaMovimentacoesContaCorrenteQuery, List<MovimentoContaCorrente>>, ConsultaMovimentacoesContaCorrenteHandler>();
-
-builder.Services.AddScoped<IMovimentoRepository, MovimentoRepository>();
-builder.Services.AddScoped<IContaCorrenteRepository>(provider => new ContaCorrenteRepository(provider.GetService<DatabaseConfig>()));
-
-
-builder.Services.BuildServiceProvider();
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Notification
+builder.Services.AddScoped<LogNotifications>();
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddScoped<ILanguageSystem, LanguageSystem>();
+
+//Others
+builder.Services.AddAutoMapper(typeof(CommandToDomainMappingProfile));
+
+builder.Services.AddTransient(typeof(IBaseConsultRepository<>), typeof(RepositoryConsult<>));
+
+builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+
+//Add SqlLite
+var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+     options.UseSqlite(connectionString)
+     .EnableSensitiveDataLogging()
+     .UseLazyLoadingProxies());
+
 
 var app = builder.Build();
 
@@ -39,10 +63,11 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
-    });
+    app.UseSwaggerUI();
+    //app.UseSwaggerUI(c =>
+    //{
+    //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+    //});
 }
 
 app.UseHttpsRedirection();

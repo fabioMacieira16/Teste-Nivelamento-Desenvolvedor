@@ -1,11 +1,11 @@
-﻿namespace Questao5.Domain.Language;
+﻿using Questao5.Infrastructure.CrossCutting;
+
+namespace Questao5.Domain.Language;
 public enum LanguageChoice
 {
-
     Portuguese = 1,
     Ingles = 2,
-    French = 3,
-
+    Espanhol = 3,
 }
 public class LanguageSystem : ILanguageSystem
 {
@@ -13,6 +13,7 @@ public class LanguageSystem : ILanguageSystem
     readonly IConfiguration _configuration;
 
     LanguageChoice _languageChoice;
+
     public LanguageSystem(IConfiguration configuration)
     {
         _configuration = configuration;
@@ -33,8 +34,8 @@ public class LanguageSystem : ILanguageSystem
                 return "Dados Atualizados com Sucesso";
             case LanguageChoice.Ingles:
                 return "Data Updated Successfully";
-            case LanguageChoice.French:
-                return "Données mises à jour avec succès";
+            case LanguageChoice.Espanhol:
+                return "Datos actualizados con éxito";
             default:
                 return "Dados Atualizados com Sucesso";
         }
@@ -45,11 +46,11 @@ public class LanguageSystem : ILanguageSystem
         switch (_languageChoice)
         {
             case LanguageChoice.Portuguese:
-                return "Ops Houve Algum Problema.";
+                return "Houve Algum Problema.";
             case LanguageChoice.Ingles:
-                return "Oops there was a problem";
-            case LanguageChoice.French:
-                return "Oups il y a eu un problème";
+                return "There was a problem";
+            case LanguageChoice.Espanhol:
+                return "Había un problema";
             default:
                 return "Dados Atualizados com Sucesso";
         }
@@ -60,13 +61,13 @@ public class LanguageSystem : ILanguageSystem
         switch (_languageChoice)
         {
             case LanguageChoice.Portuguese:
-                return "Atenção conta corrente não cadastrada";
+                return "Atenção! conta corrente não cadastrada";
             case LanguageChoice.Ingles:
-                return "Attention not registered checking account";
-            case LanguageChoice.French:
-                return "Attention compte courant non enregistré";
+                return "Attention! not registered checking account";
+            case LanguageChoice.Espanhol:
+                return "¡Atención! cuenta corriente no registrada";
             default:
-                return "Atenção conta corrente não cadastrada";
+                return "Atenção! Conta corrente não cadastrada";
         }
     }
 
@@ -75,13 +76,13 @@ public class LanguageSystem : ILanguageSystem
         switch (_languageChoice)
         {
             case LanguageChoice.Portuguese:
-                return "Atenção valor inválido";
+                return "Atenção! valor inválido";
             case LanguageChoice.Ingles:
-                return "Attention invalid value";
-            case LanguageChoice.French:
-                return "Attention valeur invalide";
+                return "Attention! invalid value";
+            case LanguageChoice.Espanhol:
+                return "Atención! valor no válido";
             default:
-                return "Dados Atualizados com Sucesso";
+                return "Atenção! valor inválido";
         }
     }
 
@@ -90,13 +91,13 @@ public class LanguageSystem : ILanguageSystem
         switch (_languageChoice)
         {
             case LanguageChoice.Portuguese:
-                return "Atenção conta inativa";
+                return "Atenção! conta inativa";
             case LanguageChoice.Ingles:
-                return "Attention inactive account";
-            case LanguageChoice.French:
-                return "Attention compte inactif";
+                return "Attention! inactive account";
+            case LanguageChoice.Espanhol:
+                return "¡Atención! cuenta inactiva";
             default:
-                return "Atenção conta inativa";
+                return "Atenção! conta inativa";
         }
     }
 
@@ -105,13 +106,13 @@ public class LanguageSystem : ILanguageSystem
         switch (_languageChoice)
         {
             case LanguageChoice.Portuguese:
-                return "Atenção tipo da movimentação inválido";
+                return "Atenção! Tipo da movimentação inválido";
             case LanguageChoice.Ingles:
-                return "Warning Invalid move type";
-            case LanguageChoice.French:
-                return "Avertissement Type de mouvement invalide";
+                return "Warning! Invalid move type";
+            case LanguageChoice.Espanhol:
+                return "\r\n¡Atención! Tipo de movimiento no válido";
             default:
-                return "Atenção tipo da movimentação inválido";
+                return "Atenção! Tipo da movimentação inválido";
         }
     }
 }

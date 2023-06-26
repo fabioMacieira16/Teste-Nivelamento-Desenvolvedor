@@ -8,7 +8,7 @@ using System.Net;
 namespace Questao5.Infrastructure.Services.Controllers;
 
 //[ApiController]
-[Route("api/[Contacorrente]")]
+[Route("api/contacorrente")]
 public class ContaCorrenteController : ApiController
 {
 
@@ -21,7 +21,7 @@ public class ContaCorrenteController : ApiController
     }
 
     /// <summary>
-    /// MovimentarContaCorrenteCommand => Movimentar a conta com créditos ou débitos
+    /// MovimentacaoContaCorrenteCommand => Movimentar a conta com créditos ou débitos
     /// </summary>
     /// <returns></returns>
     /// <response code="200">Retorna o item solicitado</response>
@@ -36,17 +36,17 @@ public class ContaCorrenteController : ApiController
 
 
     /// <summary>
-    /// Obtetem o Saldo da Conta Corrente => obter o saldo da conta
+    /// Obter o Saldo da Conta Corrente
     /// </summary>
     /// <returns></returns>
     /// <response code="200">Retorna o item solicitado</response>
-    /// <response code="400">Regras de negócios inválidas ou solicitação mal formatada</response>   
+    /// <response code="400">Regra inválidas ou solicitação mal formatada</response>   
     /// <response code="500">Erro do Servidor Interno</response>   
     /// <response code="401">Não autorizado</response>
     [ProducesResponseType((int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
     [HttpGet]
-    public async Task<IActionResult> ObterSaldoContaCorrente([FromBody] ObterSaldoContaCorrenteQuery obterSaldoContaCorrenteQuery)
+    public async Task<IActionResult> ObterSaldoContaCorrente([FromQuery] ObterSaldoContaCorrenteQuery obterSaldoContaCorrenteQuery)
         => await ExecControllerAsync(() => _mediator.Send(obterSaldoContaCorrenteQuery));
 }
