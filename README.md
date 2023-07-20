@@ -1,11 +1,15 @@
 
 <h1 align="center">Repositório de Testes de Habilidades Técnicas </h1> 
+
 <p align="center"> 
-    <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/badge/npm-8.3.1-orange"/>
-    <img src="https://img.shields.io/github/license/gabrielajc/angularApp"/> 
+    <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/>     
     <img src="https://img.shields.io/badge/Bootstrap-7.1.2-brightgreen"/> 
-    <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=pink&style=for-the-badge&logo=netlify"/> <img src="https://badges.aleen42.com/src/angular.svg"/> 
+    <img src="https://badges.aleen42.com/src/angular.svg"/> 
     <img src="https://badges.aleen42.com/src/typescript.svg"/>
+    <img src="https://badges.aleen42.com/src/javascript.svg">
+    <img src="https://badges.aleen42.com/src/react.svg">
+    <img src="https://badges.aleen42.com/src/visual_studio_code.svg">
+        
  </p>
 
 <h6> Bem-vindo(a) ao Repositório de Testes de Habilidades Técnicas para Analistas de Desenvolvimento! Este projeto tem como objetivo oferecer um espaço dedicado a testes práticos que permitem avaliar a capacidade técnica de profissionais nas áreas de desenvolvimento back-end, front-end, C# e incluí também outras linguagens de programação e frameworks, bem como testes de lógica.</h6>
