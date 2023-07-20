@@ -1,6 +1,12 @@
 
 <h1 align="center">Repositório de Testes de Habilidades Técnicas </h1> 
-<p align="center"> <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/badge/npm-8.3.1-orange"/> <img src="https://img.shields.io/github/license/gabrielajc/angularApp"/> <img src="https://img.shields.io/badge/Bootstrap-7.1.2-brightgreen"/> <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=pink&style=for-the-badge&logo=netlify"/> <img src="https://badges.aleen42.com/src/angular.svg"/> <img src="https://badges.aleen42.com/src/typescript.svg"/> </p>
+<p align="center"> 
+    <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/badge/npm-8.3.1-orange"/>
+    <img src="https://img.shields.io/github/license/gabrielajc/angularApp"/> 
+    <img src="https://img.shields.io/badge/Bootstrap-7.1.2-brightgreen"/> 
+    <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=pink&style=for-the-badge&logo=netlify"/> <img src="https://badges.aleen42.com/src/angular.svg"/> 
+    <img src="https://badges.aleen42.com/src/typescript.svg"/>
+ </p>
 
 <h6> Bem-vindo(a) ao Repositório de Testes de Habilidades Técnicas para Analistas de Desenvolvimento! Este projeto tem como objetivo oferecer um espaço dedicado a testes práticos que permitem avaliar a capacidade técnica de profissionais nas áreas de desenvolvimento back-end, front-end e C#.</h6>
 
@@ -37,4 +43,4 @@ Agradecemos por utilizar este repositório como uma ferramenta para aprimorar se
 ### Autor
 Dev. `Fabio macieira` :wave: Obrigada por acessar.
 
-[![Linkedin Badge](https://img.shields.io/badge/-Gabe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fabio-macieira-1ba6321b1/)](https://www.linkedin.com/in/fabio-macieira-1ba6321b1/)
+<a href="https://www.linkedin.com/in/fabio-macieira-1ba6321b1/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
