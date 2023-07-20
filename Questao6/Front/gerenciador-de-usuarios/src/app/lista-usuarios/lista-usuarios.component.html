@@ -1,0 +1,21 @@
+<h2>Lista de Usuários</h2>
+<button routerLink="/adicionar-usuario">Adicionar Usuário</button>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Foto</th>
+    <th>Ações</th>
+  </tr>
+  <tr *ngFor="let usuario of usuarios">
+    <td>{{usuario.nome}}</td>
+    <td>{{usuario.email}}</td>
+    <td>
+      <img [src]="usuario.foto" alt="Foto do usuário" width="50" height="50">
+    </td>
+    <td>
+      <button routerLink="/editar-usuario/{{usuario.id}}">Editar</button>
+      <button (click)="excluirUsuario(usuario)">Excluir</button>
+    </td>
+  </tr>
+</table>
