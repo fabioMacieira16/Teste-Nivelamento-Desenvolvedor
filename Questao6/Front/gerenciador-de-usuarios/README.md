@@ -33,4 +33,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### Autor
 Dev. Fabio macieira :wave: Obrigada por acessar.
 
-[![Linkedin Badge](https://img.shields.io/badge/-Gabe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabeclemente/)](https://www.linkedin.com/in/gabeclemente/)
+[![Linkedin Badge](https://img.shields.io/badge/-Gabe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fabio-macieira-1ba6321b1/)](https://www.linkedin.com/in/fabio-macieira-1ba6321b1/)

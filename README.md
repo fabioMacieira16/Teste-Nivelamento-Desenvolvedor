@@ -2,35 +2,39 @@
 <h1 align="center">Repositórios de Teste para Empresas </h1> 
 <p align="center"> <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/badge/npm-8.3.1-orange"/> <img src="https://img.shields.io/github/license/gabrielajc/angularApp"/> <img src="https://img.shields.io/badge/Bootstrap-7.1.2-brightgreen"/> <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=pink&style=for-the-badge&logo=netlify"/> <img src="https://badges.aleen42.com/src/angular.svg"/> <img src="https://badges.aleen42.com/src/typescript.svg"/> </p>
 
-<h6> Seja bem-vindo(a) ao repositório de testes para empresas! </h6>
+<h6> Bem-vindo(a) ao Repositório de Testes de Habilidades Técnicas para Analistas de Desenvolvimento! Este projeto tem como objetivo oferecer um espaço dedicado a testes práticos que permitem avaliar a capacidade técnica de profissionais nas áreas de desenvolvimento back-end, front-end e C#.</h6>
 
 ### :small_blue_diamond: About
-<h4> CRUD project generated with [Angular CLI](https://github.com/angular/angular-cli) with user and teacher registration in API, access to pokemon API capturing ID. And some tools generated with TYPESCRIPT and Angular CLI tools </h4>
-<i> Projeto CRUD gerado com  [Angular CLI](https://github.com/angular/angular-cli) com cadastro de usuários e professores em API, acesso a API de pokemons capturando ID. E algumas ferramentas geradas com TYPESCRIPT e ferramentas do Angular CLI </i>
+<h4>Repositório de Testes de Habilidades Técnicas para Analistas de Desenvolvimento</h4>
 
-### 🛠️ Technologies
-HTML, CSS, BOOTSTRAP, NODEJS, ANGULAR-CLI, TYPESCRIPT.
+<i>Este repositório foi criado para atender às necessidades de empresas que desejam avaliar a proficiência e o conhecimento técnico de seus analistas de desenvolvimento em diversas áreas específicas. Aqui, você encontrará uma série de testes cuidadosamente elaborados para abranger habilidades essenciais em desenvolvimento de software.</i>
 
-### 📁 Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 🛠️ Technologies/ Available Resources:
+C#, TYPESCRIPT, JAVASCRIPT, HTML, CSS, BOOTSTRAP, NODEJS, ANGULAR-CLI, REACT .
 
-### 🛠️ Code scaffolding
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 📁 Testes de Desenvolvimento Back-End: 
+Nesta seção, você encontrará uma variedade de desafios práticos relacionados ao desenvolvimento back-end. Esses testes abrangem temas como lógica de programação, manipulação de bancos de dados, implementação de APIs, Diversos tipos de arquiteturas e muito mais.
 
-### 🚀 Build
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🛠️ Testes de Desenvolvimento Front-End: 
+Aqui, os analistas de desenvolvimento poderão enfrentar desafios envolvendo HTML, CSS, JavaScript e outros frameworks e bibliotecas relevantes para o desenvolvimento front-end.
 
-### 🔬 Running unit tests
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 🚀 Testes de Desenvolvimento em C#
+Esta seção é dedicada a testes que avaliam as habilidades técnicas em C#. Os desafios incluem tópicos como programação orientada a objetos, manipulação de dados, gerenciamento de exceções e outros conceitos fundamentais da linguagem.
 
-### 🔬 Running end-to-end tests
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-### 💡 Further help
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 💡 Running unit tests
+As empresas podem utilizar este repositório como uma `ferramenta para conduzir testes` práticos durante seus processos de seleção de analistas de desenvolvimento. Cada teste é acompanhado de instruções claras e detalhadas, permitindo uma avaliação justa e precisa das capacidades técnicas dos candidatos, e os candidatos podem usar para fazer pesquisar .
 
 
+### 🔬 Contribuindo:
+Encorajamos a contribuição de [desenvolvedores] que desejam adicionar novos testes ou aprimorar os existentes. Se você possui desafios interessantes que podem ajudar a avaliar habilidades específicas de desenvolvimento, sinta-se à vontade para enviar suas contribuições por meio de "pull requests".
+
+
+### ⚠️ Aviso Legal:
+
+Este repositório foi criado com o intuito de promover a avaliação justa e transparente das habilidades técnicas dos analistas de desenvolvimento. Todas as questões aqui presentes são baseadas em desafios reais enfrentados na indústria, e o uso desses testes deve estar em conformidade com as leis e regulamentações aplicáveis. Não é permitido o uso deste repositório para fins ilegais ou antiéticos.
+
+Agradecemos por utilizar este repositório como uma ferramenta para aprimorar seus processos de seleção e desenvolvimento de equipes de alta qualidade. Esperamos que essa plataforma contribua para a descoberta e a valorização de talentos excepcionais em desenvolvimento de software.
 ### Autor
-Dev. Fabio macieira :wave: Obrigada por acessar.
+Dev. `Fabio macieira` :wave: Obrigada por acessar.
 
-[![Linkedin Badge](https://img.shields.io/badge/-Gabe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabeclemente/)](https://www.linkedin.com/in/gabeclemente/)
+[![Linkedin Badge](https://img.shields.io/badge/-Gabe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fabio-macieira-1ba6321b1/)](https://www.linkedin.com/in/fabio-macieira-1ba6321b1/)
