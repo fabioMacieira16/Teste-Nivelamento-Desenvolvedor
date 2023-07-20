@@ -8,7 +8,7 @@
     <img src="https://badges.aleen42.com/src/typescript.svg"/>
  </p>
 
-<h6> Bem-vindo(a) ao Repositório de Testes de Habilidades Técnicas para Analistas de Desenvolvimento! Este projeto tem como objetivo oferecer um espaço dedicado a testes práticos que permitem avaliar a capacidade técnica de profissionais nas áreas de desenvolvimento back-end, front-end e C#.</h6>
+<h6> Bem-vindo(a) ao Repositório de Testes de Habilidades Técnicas para Analistas de Desenvolvimento! Este projeto tem como objetivo oferecer um espaço dedicado a testes práticos que permitem avaliar a capacidade técnica de profissionais nas áreas de desenvolvimento back-end, front-end, C# e incluí também outras linguagens de programação e frameworks, bem como testes de lógica.</h6>
 
 ### :small_blue_diamond: About
 <h4>Repositório de Testes de Habilidades Técnicas para Analistas de Desenvolvimento</h4>
@@ -27,7 +27,7 @@ Aqui, os analistas de desenvolvimento poderão enfrentar desafios envolvendo HTM
 ### 🚀 Testes de Desenvolvimento em C#
 Esta seção é dedicada a testes que avaliam as habilidades técnicas em C#. Os desafios incluem tópicos como programação orientada a objetos, manipulação de dados, gerenciamento de exceções e outros conceitos fundamentais da linguagem.
 
-### 💡 Running unit tests
+### 💡 Como Utilizar:
 As empresas podem utilizar este repositório como uma `ferramenta para conduzir testes` práticos durante seus processos de seleção de analistas de desenvolvimento. Cada teste é acompanhado de instruções claras e detalhadas, permitindo uma avaliação justa e precisa das capacidades técnicas dos candidatos, e os candidatos podem usar para fazer pesquisar .
 
 
